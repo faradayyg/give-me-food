@@ -1,0 +1,31 @@
+{
+  "name": "mr_seun",
+  "version": "1.0.0",
+  "description": "Food ordering app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parallelshell \"node-sass --watch assets/sass/app.scss bundle/css/app.css\" \" webpack --progress --hot --watch \" \"supervisor serve.js\" "
+  },
+  "author": "Friday Godswill @faradayyg",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "body-parser": "^1.18.2",
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.18.13",
+    "express": "^4.16.1",
+    "knex": "^0.13.0",
+    "node-sass": "^4.5.3",
+    "parallelshell": "^3.0.1",
+    "pug": "^2.0.0-rc.4",
+    "sqlite3": "^3.1.13",
+    "vue": "^2.4.4",
+    "vue-loader": "^13.0.5",
+    "vue-template": "^1.0.3",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0"
+  }
+}
