@@ -1,15 +1,24 @@
-var knex = require('../knex_config');
+var knex = require('../config/knex_config');
 module.exports = {
-	addUser : (name,email,password) =>{
+	addUser : function(name,email,password)
+	{
 
 		knex('users').insert({
-			name 	 	:name,
+			name 	 	: name,
 			email 	 	: email,
-			password 	:password
-		}).then((msg)=>{
+			password 	: password
+		}).then(function(msg){
 			console.log(msg)
-		}).catch((err) => {
-			console.log(err)
+			return 
+			{
+				status : "success"
+			}
+		}).catch(function(err){
+			return 
+			{
+				status : "error"
+			}
 		})
+
 	}
 };

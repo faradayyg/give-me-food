@@ -20,6 +20,7 @@
     "knex": "^0.13.0",
     "node-sass": "^4.5.3",
     "parallelshell": "^3.0.1",
+    "password-hash": "^1.2.2",
     "pug": "^2.0.0-rc.4",
     "sqlite3": "^3.1.13",
     "vue": "^2.4.4",
